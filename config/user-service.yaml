@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-service
+  cloud:
+    zookeeper:
+      connect-string: 127.0.0.1:2181 # Zookeeper 連接地址
+      discovery:
+        root: /circle # Zookeeper 根路徑
+        enabled: true

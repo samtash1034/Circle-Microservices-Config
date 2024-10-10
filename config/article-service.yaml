@@ -1,0 +1,12 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: article-service # 定義服務名稱
+  cloud:
+    zookeeper:
+      connect-string: 127.0.0.1:2181 # Zookeeper 連接地址
+      discovery:
+        root: /circle # Zookeeper 根路徑
+        enabled: true
